@@ -12,6 +12,7 @@ import EditUser from './compnents/EditUser'
 import DeleteUser from './compnents/DeleteUser'
 import MainPage from './compnents/MainPage'
 import AuthProvider from './context/Authcontext.jsx' // 이거 로그인 시 로그아웃 버튼 바로 나오게 추가함
+import Admin from './compnents/Admin.jsx'
 
 function App() {
  
@@ -31,7 +32,7 @@ function App() {
         <Route path='/mypage' element={<Settings/>}/>
         <Route path='/mypage/edit' element={<EditUser/>}/>
         <Route path='/mypage/delete' element={<DeleteUser/>}/>
-         
+        <Route path='/admin' element={<Admin/>}/>
       </Routes>
     </BrowserRouter>
     </AuthProvider>
